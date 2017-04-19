@@ -1,0 +1,8 @@
+{
+  "name": "jud-template",
+  "version": "0.1.0",
+  "description": "Jud template for vue-cli",
+  "keywords": ["jud", "template"],
+  "author": "jinjiang <zhaojinjiang@me.com>",
+  "license": "GPL-3.0"
+}
