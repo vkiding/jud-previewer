@@ -45,7 +45,7 @@ var Previewer = {
       }
     }
     if (!helper.checkEntry(args.entry)) {
-      return npmlog.error('Not a ".vue" or ".we" file');
+      return npmlog.error('Not a ".vue" or ".ju" file');
     }
     if (args.port <= 0 || args.port >= 65336) {
       this.params.port = 8081;

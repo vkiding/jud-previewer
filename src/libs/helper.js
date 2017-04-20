@@ -4,7 +4,7 @@ const pathTo = require('path');
 module.exports = {
   // check entry file
   checkEntry: function (filename) {
-    return /\.(we|vue)$/.test(filename);
+    return /\.(ju|vue)$/.test(filename);
   },
   getFileType: function (filename) {
     return /\.vue$/.test(filename) ? 'vue' : 'ju';

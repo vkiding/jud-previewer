@@ -6,7 +6,7 @@ var pathTo = require('path');
 module.exports = {
   // check entry file
   checkEntry: function checkEntry(filename) {
-    return (/\.(we|vue)$/.test(filename)
+    return (/\.(ju|vue)$/.test(filename)
     );
   },
   getFileType: function getFileType(filename) {
