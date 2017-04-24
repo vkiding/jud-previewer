@@ -11,13 +11,13 @@ if (yargs.argv['$0'] === 'jud-previewer') {
   commandName = 'jud-previewer';
 }
 
-const userinfo = '\nUsage: ' + commandName + ' <foo/bar/we_file_or_dir_path>  [options]';
+const userinfo = '\nUsage: ' + commandName + ' <foo/bar/ju_file_or_dir_path>  [options]';
 const command = `
 where <command> is one of:
 
   init                                   create a vue project
   debug                                  start jud debugger
-  compile                                compile we/vue file
+  compile                                compile ju/vue file
   create                                 create a judpack project 
   platform <add|remove> <ios|android>    add/remove ios/android platform
   plugin <add|remove> <pluginName>       add/remove judplugin 
