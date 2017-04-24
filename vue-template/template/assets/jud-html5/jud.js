@@ -145,7 +145,7 @@
 	var DEFAULT_ROOT_ID = 'jud';
 	var DEFAULT_JSONP_CALLBACK_NAME = 'judJsonpCallback';
 	
-	global.WXEnvironment = {
+	global.JUDEnvironment = {
 	  judVersion: _config2.default.judVersion,
 	  appName: lib.env.jdApp ? lib.env.jdApp.appname : null,
 	  appVersion: lib.env.jdApp ? lib.env.jdApp.version.val : null,
@@ -991,9 +991,9 @@
 	// fix Promise Problem on JSContext of iOS7~8
 	// @see https://bugs.webkit.org/show_bug.cgi?id=135866
 	var _global = global;
-	var WXEnvironment = _global.WXEnvironment;
+	var JUDEnvironment = _global.JUDEnvironment;
 	
-	if (WXEnvironment && WXEnvironment.platform === 'iOS') {
+	if (JUDEnvironment && JUDEnvironment.platform === 'iOS') {
 	  global.Promise = null;
 	}
 	__webpack_require__(10);
@@ -3329,10 +3329,10 @@
 	
 	  // run code and get result
 	  var _global = global;
-	  var WXEnvironment = _global.WXEnvironment;
+	  var JUDEnvironment = _global.JUDEnvironment;
 	
 	
-	  if (WXEnvironment) {
+	  if (JUDEnvironment) {
 	    var fn = new Function('define', 'require', 'document', 'bootstrap', 'register', 'render', '__jud_define__', // alias for define
 	    '__jud_bootstrap__', // alias for bootstrap
 	    '__jud_document__', // alias for bootstrap
@@ -6927,9 +6927,9 @@
 	
 	  // run code and get result
 	  var _global = global;
-	  var WXEnvironment = _global.WXEnvironment;
+	  var JUDEnvironment = _global.JUDEnvironment;
 	
-	  if (WXEnvironment && WXEnvironment.platform !== 'Web') {
+	  if (JUDEnvironment && JUDEnvironment.platform !== 'Web') {
 	    (function () {
 	      // timer APIs polyfill in native
 	      var timer = app.requireModule('timer');
@@ -8246,7 +8246,7 @@
 	 * @return {Object}            { isDowngrade: true/false, errorMessage... }
 	 */
 	function check(config, deviceInfo) {
-	  deviceInfo = deviceInfo || global.WXEnvironment;
+	  deviceInfo = deviceInfo || global.JUDEnvironment;
 	  deviceInfo = (0, _util.isPlainObject)(deviceInfo) ? deviceInfo : {};
 	
 	  var result = {
@@ -9126,7 +9126,7 @@
 			"modals": "^0.1.6",
 			"scroll-to": "0.0.2",
 			"semver": "^5.1.0",
-			"jud-components": "^0.2.0"
+			"jud-components": "^0.0.1"
 		},
 		"devDependencies": {
 			"babel-cli": "~6.4.5",
@@ -9153,7 +9153,7 @@
 			"style-loader": "^0.13.1",
 			"uglify-js": "^2.6.4",
 			"webpack": "^1.13.1",
-			"jud-loader": "^0.3.1",
+			"jud-loader": "^0.0.2",
 			"wwp": "^0.2.0"
 		}
 	};
@@ -9299,7 +9299,7 @@
 	 */
 	function $getConfig(callback) {
 	  var config = (0, _util.extend)({
-	    env: global.WXEnvironment || {}
+	    env: global.JUDEnvironment || {}
 	  }, this._app.options);
 	  if ((0, _util.typof)(callback) === 'function') {
 	    console.warn('[JS Framework] the callback of Vm#$getConfig(callback) is deprecated, ' + 'this api now can directly RETURN config info.');

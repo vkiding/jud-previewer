@@ -4368,7 +4368,7 @@ Object.freeze(units);
 // Object.freeze(env)
 
 window.CSS_UNIT = units;
-window.WXEnvironment = env;
+window.JUDEnvironment = env;
 
 /* global Vue */
 
@@ -4379,7 +4379,7 @@ var jud$3 = {
   utils: utils$1,
   units: window.CSS_UNIT,
   config: {
-    env: window.WXEnvironment,
+    env: window.JUDEnvironment,
     bundleUrl: location.href
   },
 
