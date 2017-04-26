@@ -9085,7 +9085,7 @@
 			"modals": "^0.1.6",
 			"scroll-to": "0.0.2",
 			"semver": "^5.1.0",
-			"jud-components": "^0.0.1"
+			"jud-components": "latest"
 		},
 		"devDependencies": {
 			"babel-cli": "~6.4.5",
@@ -9112,7 +9112,7 @@
 			"style-loader": "^0.13.1",
 			"uglify-js": "^2.6.4",
 			"webpack": "^1.13.1",
-			"jud-loader": "^0.0.2",
+			"jud-loader": "latest",
 			"wwp": "^0.2.0"
 		}
 	};
